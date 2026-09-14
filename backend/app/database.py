@@ -6,8 +6,13 @@ from app.config import settings
 
 logger = logging.getLogger(__name__)
 
+import os
+
 # Fallback mechanism: if database url is postgresql but connection fails, can fallback or connect SQLite
 db_url = settings.DATABASE_URL
+if os.environ.get("VERCEL") and ("sqlite" in db_url or not db_url):
+    db_url = "sqlite:////tmp/cheat_detection.db"
+
 connect_args = {}
 if db_url.startswith("sqlite"):
     connect_args = {"check_same_thread": False}
