@@ -35,7 +35,7 @@ def seed_database():
     # 1. Create Users
     print("Creating admin and candidates...")
     admin = User(
-        name="Sarah Connor (Lead Evaluator)",
+        name="Bhuvan Sai (Lead Evaluator)",
         email="admin@interview.ai",
         password_hash=hash_password("AdminPass123!"),
         role="admin",

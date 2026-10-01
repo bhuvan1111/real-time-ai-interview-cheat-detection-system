@@ -192,7 +192,7 @@ The seed script automatically initializes accounts with varied risk profiles:
 
 | Role | Name | Email | Password | Risk Profile |
 | :--- | :--- | :--- | :--- | :--- |
-| **Lead Evaluator** | Sarah Connor | `admin@interview.ai` | `AdminPass123!` | Evaluator Console |
+| **Lead Evaluator** | Bhuvan Sai | `admin@interview.ai` | `AdminPass123!` | Evaluator Console |
 | **Candidate** | Alice Smith | `alice@candidate.com` | `CandidatePass123!` | **LOW** (12/100) |
 | **Candidate** | Bob Johnson | `bob@candidate.com` | `CandidatePass123!` | **MEDIUM** (38/100) |
 | **Candidate** | Charlie Brown | `charlie@candidate.com` | `CandidatePass123!` | **HIGH** (68/100) |
